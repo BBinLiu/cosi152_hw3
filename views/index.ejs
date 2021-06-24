@@ -1,0 +1,13 @@
+
+
+  <div class="jumbotron">
+    <h1> Hangout! </h1>
+    <p>Welcome to the Hangout, join an event if you are interested!</p>
+    <ul>
+      <% if (loggedIn) {%>
+      <li><a href="/eventForm">Post a new event! </a></li>
+      <li><a href="/eventList">See all the events! </a></li>
+      <li><a href="/profile">See your profile </a></li>
+      <% } %>
+    </ul>
+  </div>

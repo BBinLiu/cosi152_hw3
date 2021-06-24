@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <h1> Event Details: </h1>
+
+
+      <div style="border-top:thick solid blue; margin:20; padding:10">
+          <h1 class="bg-warning"> Destination: <%= event.destination %> </h1>
+          <div class="row">
+            <ul>
+              <li> Started by <%= event.name %></li>
+              <li> Time: <%= event.time %></li>
+              <li> Limit on number of peole: <%= event.number %></li>
+              <li> Transporation: <%= event.transporation %></li>
+            </ul>
+    </div>
+</div>
+
+        <li> Current number of peole: <%= event.curNumber %></li>
+        <br>
+        Current participants:
+        <% event.participants.forEach(item => {   %>
+         <li> <%= item %> </li>
+
+        <% }) %>
+        <br>
+        <a href="/eventList">Go Back</a>
+</div>

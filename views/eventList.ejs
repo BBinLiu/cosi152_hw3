@@ -1,0 +1,24 @@
+<div class="jumbotron">
+  <h1> These Events are waiting for you to join! </h1>
+
+    <% events.forEach(event => { %>
+      <div style="border-top:thick solid blue; margin:20; padding:10">
+          <h1 class="bg-warning"> Destination: <%= event.destination %> </h1>
+          <div class="row">
+            <ul>
+              <li> Started by <%= event.name %></li>
+              <li> Time: <%= event.time %></li>
+              <li> Limit on number of peole: <%= event.number %></li>
+              <li> Transporation: <%= event.transporation %></li>
+            </ul>
+    </div>
+</div>
+
+        <li> Current number of peole: <%= event.curNumber %></li>
+        <br>
+        <form method="post" action="/updateEvent/<%=event._id %>">
+            <input type="submit" value="Join this event!">
+        </form>
+    <% }) %>
+
+</div>

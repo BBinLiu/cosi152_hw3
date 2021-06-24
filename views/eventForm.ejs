@@ -1,0 +1,35 @@
+<h1>
+      Post a new event!
+    </h1>
+
+<form method="post" action="/postEvent" class="bg-info">
+  Enter the your name:
+  <input type="text"
+         name="name">
+         <br><br>
+  Enter the destination:
+  <input type="text"
+         name="destination">
+         <br><br>
+  Time for this event:
+  <input type="date"
+         name="time"><br><br>
+
+  How many people would you like to join this event?
+  <select name="number">
+    <option>less than 4</option>
+    <option>4 - 8</option>
+    <option>more than 8</option>
+  </select>
+
+  <br><br>
+  Transporation Plan:<br>
+  car <input type="radio" name="transporation" value="car"><br>
+  public transporation  <input type="radio" name="transporation" value="public transporation"><br>
+  bike
+      <input type="radio" name="transporation" value="bike"><br><br>
+
+  <input type="submit" value="Post Now">
+</form>
+
+<hr>
